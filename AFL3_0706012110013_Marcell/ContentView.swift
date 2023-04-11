@@ -13,11 +13,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("The Rock is a Turtle")
-                .font(.callout)
+            VStack(alignment: .leading) {
                 
-            Text("This is MarcellJW!")
-                .font(.subheadline)
+                Text("The Rock is a Turtle")
+                    .font(.callout)
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Text("California")
+                }
+            }
                 
         }
         .padding()
