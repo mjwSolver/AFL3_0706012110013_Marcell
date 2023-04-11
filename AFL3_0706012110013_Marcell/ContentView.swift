@@ -15,7 +15,7 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("The Rock is a Turtle")
                 .font(.callout)
-                .foregroundColor(Color.blue)
+                
             Text("This is MarcellJW!")
                 .font(.subheadline)
                 
