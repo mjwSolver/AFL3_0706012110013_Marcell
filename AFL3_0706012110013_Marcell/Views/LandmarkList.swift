@@ -11,7 +11,7 @@ import SwiftUI
 // Making the list dynamid with a for-each loop
 struct LandmarkList: View {
     var body: some View {
-        List(landmarks, id: \.id) { landmark in
+        List(landmarks) { landmark in
             LandmarkRow(landmark: landmark)
         }
     }
