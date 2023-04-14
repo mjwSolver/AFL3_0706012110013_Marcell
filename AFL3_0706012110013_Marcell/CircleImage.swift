@@ -12,13 +12,13 @@ struct CircleImage: View {
     var body: some View {
         
         // Insert image, clip it
-        // add a border
-        
         Image("turtlerock")
             .clipShape(Circle())
+        // add a border
             .overlay {
-                Circle().stroke(.gray, lineWidth: 4)
+                Circle().stroke(.white, lineWidth: 4)
             }
+        // add a dropshadow
             .shadow(radius: 5, x:3)
     }
 }
