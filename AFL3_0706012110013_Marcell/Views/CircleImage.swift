@@ -25,8 +25,8 @@ struct CircleImage: View {
     }
 }
 
-// Declarative Struct that initializes the view
-// On to the device.
+// Declarative Struct that initializes the view On to the device.
+// Circle Image is open for extension
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
         CircleImage(image: Image("turtlerock"))
