@@ -9,7 +9,12 @@ import SwiftUI
 
 // Update Landmark detail with new views that are open for extension (dynamic)
 struct LandmarkDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
     
     var body: some View {
         // Create a new VStack to organize the view
@@ -28,8 +33,12 @@ struct LandmarkDetail: View {
             VStack {
                 VStack(alignment: .leading) {
                     
-                    Text(landmark.name)
-                        .font(.callout)
+                    HStack {
+                        Text(landmark.name)
+                            .font(.title)
+                        FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                    }
+                    
                     HStack {
                         Text(landmark.park)
                             .font(.subheadline)
@@ -62,7 +71,10 @@ struct LandmarkDetail: View {
 
 // Making LandmarkDetail open for extension
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+    
     static var previews: some View {
-        LandmarkDetail(landmark: ModelData().landmarks[0])
+        LandmarkDetail(landmark: modelData.landmarks[0])
+            .environmentObject(modelData)
     }
 }
