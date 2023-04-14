@@ -8,15 +8,16 @@
 import SwiftUI
 import MapKit
 
-// Struct to generate Location view
+// Struct to define location coordinates
 struct MapView: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
     )
 
+    // body to generate map view
     var body: some View {
-        Text("Hello, World!")
+        Map(coordinateRegion: $region)
     }
 }
 struct MapView_Previews: PreviewProvider {
