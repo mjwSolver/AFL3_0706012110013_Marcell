@@ -8,11 +8,11 @@
 import SwiftUI
 
 // Repeating the preview from LandmarkRow - in a list
+// Making the list dynamid with a for-each loop
 struct LandmarkList: View {
     var body: some View {
-        List {
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+        List(landmarks, id: \.id) { landmark in
+            LandmarkRow(landmark: landmark)
         }
     }
 }
