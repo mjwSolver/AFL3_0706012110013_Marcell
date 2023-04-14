@@ -24,8 +24,13 @@ struct LandmarkRow: View {
 }
 
 // Preview the Landmark Row from Editor > Canvas
+// Configure preview to show a list of contents.
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkRow(landmark: landmarks[0])
+        Group {
+            LandmarkRow(landmark: landmarks[0])
+            LandmarkRow(landmark: landmarks[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }
