@@ -7,33 +7,34 @@
 
 import SwiftUI
 
+// Update Landmark detail with new views that are open for extension (dynamic)
 struct LandmarkDetail: View {
     var landmark: Landmark
     
     var body: some View {
         // Create a new VStack to organize the view
-        VStack {
+        ScrollView {
             // Initialize the Mapview
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
             // Insert the precreated Image
             // Change it's positioning
-            CircleImage()
+            CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack {
                 VStack(alignment: .leading) {
                     
-                    Text("The Rock is a Turtle")
+                    Text(landmark.name)
                         .font(.callout)
                     HStack {
-                        Text("Joshua Tree National Park")
+                        Text(landmark.park)
                             .font(.subheadline)
                         Spacer()
-                        Text("California")
+                        Text(landmark.state)
                             .font(.subheadline)
                     }
                     
@@ -42,9 +43,9 @@ struct LandmarkDetail: View {
                     Divider()
                     
                     // Content under the divider line
-                    Text("About Turtle Rock")
+                    Text("About \(landmark.name)")
                         .font(.title2)
-                    Text("Well, it's a Rock")
+                    Text(landmark.description)
                     
                 }.padding()
                 
@@ -53,6 +54,9 @@ struct LandmarkDetail: View {
             
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
