@@ -7,6 +7,9 @@
 
 import Foundation
 
+// Load Landmark Data from JSON file
+var landmarks: [Landmark] = load("landmarkData.json")
+
 // Define Load function and error handling logi when...
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
