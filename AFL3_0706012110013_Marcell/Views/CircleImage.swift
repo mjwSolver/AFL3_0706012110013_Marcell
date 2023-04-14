@@ -9,10 +9,12 @@ import SwiftUI
 
 // Delcarative Struct that will create the view
 struct CircleImage: View {
+    var image: Image
+    
     var body: some View {
         
         // Insert image, clip it
-        Image("turtlerock")
+        image
             .clipShape(Circle())
         // add a border
             .overlay {
@@ -27,6 +29,6 @@ struct CircleImage: View {
 // On to the device.
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(image: Image("turtlerock"))
     }
 }
