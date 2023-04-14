@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    var landmark: Landmark
+    
     var body: some View {
         // Create a new VStack to organize the view
         VStack {
@@ -54,8 +56,9 @@ struct LandmarkDetail: View {
     }
 }
 
+// Making LandmarkDetail open for extension
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }
