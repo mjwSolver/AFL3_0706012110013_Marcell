@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		042B218E29E8E74E007BBC41 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B218D29E8E74E007BBC41 /* CircleImage.swift */; };
+		042B219029E8EA7A007BBC41 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B218F29E8EA7A007BBC41 /* MapView.swift */; };
 		048B7E4429E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E4329E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift */; };
 		048B7E4629E4F09C00E75BB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E4529E4F09C00E75BB5 /* ContentView.swift */; };
 		048B7E4829E4F09E00E75BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048B7E4729E4F09E00E75BB5 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		042B218D29E8E74E007BBC41 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		042B218F29E8EA7A007BBC41 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		048B7E4029E4F09C00E75BB5 /* AFL3_0706012110013_Marcell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFL3_0706012110013_Marcell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048B7E4329E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110013_MarcellApp.swift; sourceTree = "<group>"; };
 		048B7E4529E4F09C00E75BB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,11 +98,12 @@
 		048B7E4229E4F09C00E75BB5 /* AFL3_0706012110013_Marcell */ = {
 			isa = PBXGroup;
 			children = (
+				042B218D29E8E74E007BBC41 /* CircleImage.swift */,
 				048B7E4329E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift */,
 				048B7E4529E4F09C00E75BB5 /* ContentView.swift */,
 				048B7E4729E4F09E00E75BB5 /* Assets.xcassets */,
 				048B7E4929E4F09E00E75BB5 /* Preview Content */,
-				042B218D29E8E74E007BBC41 /* CircleImage.swift */,
+				042B218F29E8EA7A007BBC41 /* MapView.swift */,
 			);
 			path = AFL3_0706012110013_Marcell;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048B7E4629E4F09C00E75BB5 /* ContentView.swift in Sources */,
+				042B219029E8EA7A007BBC41 /* MapView.swift in Sources */,
 				048B7E4429E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift in Sources */,
 				042B218E29E8E74E007BBC41 /* CircleImage.swift in Sources */,
 			);
