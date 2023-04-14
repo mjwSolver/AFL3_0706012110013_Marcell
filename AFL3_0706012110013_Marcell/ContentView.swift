@@ -14,6 +14,7 @@ struct ContentView: View {
         VStack {
             // Initialize the Mapview
             MapView()
+                .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
             // Insert the precreated Image
@@ -34,10 +35,22 @@ struct ContentView: View {
                         Text("California")
                             .font(.subheadline)
                     }
+                    
+                    
+                    // Insert a divider line
+                    Divider()
+
+                    // Content under the divider line
+                    Text("About Turtle Rock")
+                        .font(.title2)
+                    Text("Well, it's a Rock")
+                    
                 }.padding()
                 
             }
             .padding()
+            
+            Spacer()
         }
     }
 }
