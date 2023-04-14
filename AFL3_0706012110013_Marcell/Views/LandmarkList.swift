@@ -10,10 +10,11 @@ import SwiftUI
 // Repeating the preview from LandmarkRow - in a list
 // Making the list dynamid with a for-each loop
 struct LandmarkList: View {
+    @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { landmark in
+        modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
@@ -43,5 +44,6 @@ struct LandmarkList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
        LandmarkList()
+            .environmentObject(ModelData())
     }
 }
