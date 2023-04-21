@@ -8,7 +8,9 @@
 import Foundation
 import Combine
 
+// ModelData will be observable - any changes will send the updates to observers.
 final class ModelData: ObservableObject {
+    // Published means that it's open to change after initially loading it.
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
 }
