@@ -26,6 +26,7 @@
 		048B7E5F29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E5E29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.swift */; };
 		048B7E6129E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E6029E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITestsLaunchTests.swift */; };
 		04AB808029F2BA830003260B /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB807F29F2BA830003260B /* Badge.swift */; };
+		04AB808329F2C4000003260B /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04AB808229F2C4000003260B /* hikeData.json */; };
 		04D7CF5D29F2B146001C629A /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */; };
 		04D7CF5F29F2B91C001C629A /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5E29F2B91C001C629A /* RotatedBadgeSymbol.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		048B7E5E29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110013_MarcellUITests.swift; sourceTree = "<group>"; };
 		048B7E6029E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110013_MarcellUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04AB807F29F2BA830003260B /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		04AB808229F2C4000003260B /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		04D7CF5E29F2B91C001C629A /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				042B219329E8EF0F007BBC41 /* landmarkData.json */,
+				04AB808229F2C4000003260B /* hikeData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AB808329F2C4000003260B /* hikeData.json in Resources */,
 				048B7E4B29E4F09E00E75BB5 /* Preview Assets.xcassets in Resources */,
 				048B7E4829E4F09E00E75BB5 /* Assets.xcassets in Resources */,
 				042B219429E8EF0F007BBC41 /* landmarkData.json in Resources */,
