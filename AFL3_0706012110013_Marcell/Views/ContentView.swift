@@ -11,15 +11,27 @@ struct ContentView: View {
     // State for holding the the users choise
     @State private var selection: Tab = .featured
     
-    // Showing the users choice 
+    // For tagging the tabs
     enum Tab {
         case featured
         case list
     }
     
+    // Adding to Tabview and tagging them
     var body: some View {
-        LandmarkList()
-//        LandmarkDetail()
+        TabView(selection: $selection) {
+            CategoryHome()
+                .tabItem {
+                    Label("Featured", systemImage: "star")
+                }
+                .tag(Tab.featured)
+
+            LandmarkList()
+                .tabItem {
+                     Label("List", systemImage: "list.bullet")
+                 }
+                .tag(Tab.list)
+        }
     }
 }
 
