@@ -121,11 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				04AB808629F2C54E0003260B /* Hikes */,
-				048B7E4529E4F09C00E75BB5 /* ContentView.swift */,
 				042B21A529E90078007BBC41 /* Helpers */,
 				042B21A429E90068007BBC41 /* Landmarks */,
 				04AB808129F2BBBE0003260B /* Badges */,
 				04AB808F29F2D5DA0003260B /* CategoryHome.swift */,
+				048B7E4529E4F09C00E75BB5 /* ContentView.swift */,
 				04AB809129F2D8F70003260B /* CategoryRow.swift */,
 				04AB809329F2DAD60003260B /* CategoryItem.swift */,
 			);

@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var modelData: ModelData
+    // State for holding the the users choise
+    @State private var selection: Tab = .featured
+    
+    // Showing the users choice 
+    enum Tab {
+        case featured
+        case list
+    }
     
     var body: some View {
-        LandmarkDetail(landmark: modelData.landmarks[0])
+        LandmarkList()
 //        LandmarkDetail()
     }
 }
