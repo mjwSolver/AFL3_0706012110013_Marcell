@@ -10,6 +10,7 @@ import SwiftUI
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
     
+    // Able to all categories and it's data.
     var body: some View {
         NavigationView {
             List {
