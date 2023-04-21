@@ -22,6 +22,8 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(items) { landmark in
+                        // Category Item is a cover up,
+                        // I'll link over to the details page.
                         NavigationLink {
                             LandmarkDetail(landmark: landmark)
                         } label: {
