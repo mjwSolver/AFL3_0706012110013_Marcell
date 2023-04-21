@@ -13,6 +13,14 @@ final class ModelData: ObservableObject {
     // Published means that it's open to change after initially loading it.
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    
+    // Categories structured as a dictionary
+    var categories: [String: [Landmark]] {
+        Dictionary(
+            grouping: landmarks,
+            by: { $0.category.rawValue }
+        )
+    }
 }
 
 
