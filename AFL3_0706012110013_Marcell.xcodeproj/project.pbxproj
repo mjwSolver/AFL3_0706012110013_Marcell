@@ -25,6 +25,7 @@
 		048B7E5529E4F09E00E75BB5 /* AFL3_0706012110013_MarcellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E5429E4F09E00E75BB5 /* AFL3_0706012110013_MarcellTests.swift */; };
 		048B7E5F29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E5E29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.swift */; };
 		048B7E6129E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B7E6029E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITestsLaunchTests.swift */; };
+		04D7CF5D29F2B146001C629A /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		048B7E5A29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFL3_0706012110013_MarcellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		048B7E5E29E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110013_MarcellUITests.swift; sourceTree = "<group>"; };
 		048B7E6029E4F09E00E75BB5 /* AFL3_0706012110013_MarcellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110013_MarcellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				042B21A429E90068007BBC41 /* Landmarks */,
 				042B21A629E90238007BBC41 /* HexagonParameter.swift */,
 				042B21A829E90308007BBC41 /* BadgeBackground.swift */,
+				04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				048B7E4429E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift in Sources */,
 				042B21A329E90004007BBC41 /* FavoriteButton.swift in Sources */,
 				042B219F29E8F643007BBC41 /* LandmarkList.swift in Sources */,
+				04D7CF5D29F2B146001C629A /* BadgeSymbol.swift in Sources */,
 				042B21A129E8F896007BBC41 /* LandmarkDetail.swift in Sources */,
 				042B218E29E8E74E007BBC41 /* CircleImage.swift in Sources */,
 				042B21A929E90308007BBC41 /* BadgeBackground.swift in Sources */,
