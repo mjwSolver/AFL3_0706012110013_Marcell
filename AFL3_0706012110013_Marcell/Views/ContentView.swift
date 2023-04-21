@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    static let modelData = ModelData()
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-//        LandmarkDetail(landmark: modelData.landmarks[0])
-        LandmarkDetail()
+        LandmarkDetail(landmark: modelData.landmarks[0])
+//        LandmarkDetail()
     }
 }
 
