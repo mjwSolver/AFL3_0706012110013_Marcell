@@ -33,6 +33,9 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    
+    // Calculated property that holds the "featured version" of the image
+    // Depends on if it isFeature is true
     var featureImage: Image? {
         isFeatured ? Image(imageName + "_feature") : nil
     }
