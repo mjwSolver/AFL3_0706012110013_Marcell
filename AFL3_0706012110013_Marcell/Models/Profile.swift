@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Profile is the model to hold profile data
 struct Profile {
     var username: String
     var prefersNotifications = true

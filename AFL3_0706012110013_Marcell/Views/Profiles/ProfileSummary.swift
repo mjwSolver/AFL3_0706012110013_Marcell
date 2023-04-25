@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Profile Summary breaks down the contents of the Profile in a nice way. How it finally looks depends on the Host.
 struct ProfileSummary: View {
     var profile: Profile
 
