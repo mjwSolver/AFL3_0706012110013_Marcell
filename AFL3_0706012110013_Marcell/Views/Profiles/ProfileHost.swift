@@ -27,7 +27,7 @@ struct ProfileHost: View {
                 Spacer()
                 EditButton()
             }
-            
+            // Conditional to determine which view to render.
             if editMode?.wrappedValue == .inactive {
                 ProfileSummary(profile: modelData.profile)
             } else {
