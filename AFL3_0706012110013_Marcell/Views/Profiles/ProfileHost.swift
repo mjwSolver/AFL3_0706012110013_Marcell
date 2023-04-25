@@ -10,6 +10,7 @@ import SwiftUI
 // The Profile Host will hold the state and final display
 struct ProfileHost: View {
     @Environment(\.editMode) var editMode
+    // Profile data is now being taken from ModelData
     @EnvironmentObject var modelData: ModelData
     @State private var draftProfile = Profile.default
 
