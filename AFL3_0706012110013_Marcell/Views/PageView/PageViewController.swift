@@ -33,7 +33,8 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     }
     
     // Coordinator, Nested Class
-    class Coordinator: NSObject {
+    // Adding functions to conform to protocol
+    class Coordinator: NSObject, UIPageViewControllerDataSource {
         var parent: PageViewController
         var controllers = [UIViewController]()
 
@@ -41,6 +42,36 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             parent = pageViewController
             controllers = parent.pages.map { UIHostingController(rootView: $0) }
         }
+        
+        // Controls what view is before the current one
+        func pageViewController(
+            _ pageViewController: UIPageViewController,
+            viewControllerBefore viewController: UIViewController) -> UIViewController?
+        {
+            guard let index = controllers.firstIndex(of: viewController) else {
+                return nil
+            }
+            if index == 0 {
+                return controllers.last
+            }
+            return controllers[index - 1]
+        }
+
+        // Controls what view is after the current one
+        func pageViewController(
+            _ pageViewController: UIPageViewController,
+            viewControllerAfter viewController: UIViewController) -> UIViewController?
+        {
+            guard let index = controllers.firstIndex(of: viewController) else {
+                return nil
+            }
+            if index + 1 == controllers.count {
+                return controllers.first
+            }
+            return controllers[index + 1]
+        }
+
+        
     }
 
 }
