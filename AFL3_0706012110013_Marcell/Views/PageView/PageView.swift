@@ -10,9 +10,13 @@ import SwiftUI
 // Creates a PageViewController
 struct PageView<Page: View>: View {
     var pages: [Page]
+    // Adding current page as a state
+    @State private var currentPage = 0
 
+    // Changing the state above to a particular number will change
+    // The default featurecard that we are seeing
     var body: some View {
-        PageViewController(pages: pages)
+        PageViewController(pages: pages, currentPage: $currentPage)
     }
 }
 

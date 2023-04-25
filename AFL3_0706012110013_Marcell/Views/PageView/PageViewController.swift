@@ -11,6 +11,7 @@ import UIKit
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
+    @Binding var currentPage: Int
     
     // Passes down itself as the parameter.
     func makeCoordinator() -> Coordinator {
@@ -30,7 +31,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     // Creates a UIHostingController to "host" future SwiftUI Views every time it updates
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
-            [context.coordinator.controllers[0]], direction: .forward, animated: true)
+            [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
     // Coordinator, Nested Class
