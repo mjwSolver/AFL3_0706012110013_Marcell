@@ -45,7 +45,6 @@
 		04BCC18D29F800A800904D07 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC18C29F800A800904D07 /* PageView.swift */; };
 		04BCC18F29F80A2600904D07 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC18E29F80A2600904D07 /* PageControl.swift */; };
 		04BCC19829F8172200904D07 /* WatchLandmarks Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 04BCC19729F8172200904D07 /* WatchLandmarks Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		04BCC19D29F8172200904D07 /* WatchLandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC19C29F8172200904D07 /* WatchLandmarksApp.swift */; };
 		04BCC19F29F8172200904D07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC19E29F8172200904D07 /* ContentView.swift */; };
 		04BCC1A129F8172400904D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC1A029F8172400904D07 /* Assets.xcassets */; };
 		04BCC1A429F8172400904D07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCC1A329F8172400904D07 /* Preview Assets.xcassets */; };
@@ -151,7 +150,6 @@
 		04BCC18E29F80A2600904D07 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		04BCC19229F8172200904D07 /* WatchLandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchLandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BCC19729F8172200904D07 /* WatchLandmarks Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchLandmarks Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04BCC19C29F8172200904D07 /* WatchLandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLandmarksApp.swift; sourceTree = "<group>"; };
 		04BCC19E29F8172200904D07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04BCC1A029F8172400904D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BCC1A329F8172400904D07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -388,7 +386,6 @@
 		04BCC19B29F8172200904D07 /* WatchLandmarks Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				04BCC19C29F8172200904D07 /* WatchLandmarksApp.swift */,
 				04BCC19E29F8172200904D07 /* ContentView.swift */,
 				04BCC1A029F8172400904D07 /* Assets.xcassets */,
 				04BCC1A229F8172400904D07 /* Preview Content */,
@@ -728,7 +725,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BCC19F29F8172200904D07 /* ContentView.swift in Sources */,
-				04BCC19D29F8172200904D07 /* WatchLandmarksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
