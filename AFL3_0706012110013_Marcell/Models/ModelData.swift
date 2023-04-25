@@ -14,6 +14,9 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
     
+    // hold on to profile data, even when the view changes.
+    @Published var profile = Profile.default
+    
     // is featured helps with filtering the ModelData
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
