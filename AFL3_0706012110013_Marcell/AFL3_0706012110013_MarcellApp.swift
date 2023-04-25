@@ -16,5 +16,10 @@ struct AFL3_0706012110013_MarcellApp: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        
+    #if os(watchOS)
+    WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
+    #endif
+        
     }
 }
