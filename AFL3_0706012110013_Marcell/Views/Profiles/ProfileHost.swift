@@ -19,8 +19,10 @@ struct ProfileHost: View {
     }
 }
 
+// Without adding the envinronment object, the child view will fail to load. 
 struct ProfileHost_Previews: PreviewProvider {
     static var previews: some View {
         ProfileHost()
+            .environmentObject(ModelData())
     }
 }
