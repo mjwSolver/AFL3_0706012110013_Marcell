@@ -35,8 +35,9 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     }
     
     // Coordinator, Nested Class
-    // Adding functions to conform to protocol
-    class Coordinator: NSObject, UIPageViewControllerDataSource {
+    // Adding functions to conform to protocol DataSource
+    // Adding another fucntion to conform to protocol Delegate
+    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var parent: PageViewController
         var controllers = [UIViewController]()
 
@@ -73,6 +74,19 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             return controllers[index + 1]
         }
 
+        
+        // Another function when a featurecard is swiped away
+        func pageViewController(
+            _ pageViewController: UIPageViewController,
+            didFinishAnimating finished: Bool,
+            previousViewControllers: [UIViewController],
+            transitionCompleted completed: Bool) {
+            if completed,
+               let visibleViewController = pageViewController.viewControllers?.first,
+               let index = controllers.firstIndex(of: visibleViewController) {
+                parent.currentPage = index
+            }
+        }
         
     }
 
