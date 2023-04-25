@@ -17,6 +17,13 @@ struct ProfileHost: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
+                // revealing a cancel button
+                if editMode?.wrappedValue == .active {
+                   Button("Cancel", role: .cancel) {
+                       draftProfile = modelData.profile
+                       editMode?.animation().wrappedValue = .inactive
+                   }
+               }
                 Spacer()
                 EditButton()
             }
