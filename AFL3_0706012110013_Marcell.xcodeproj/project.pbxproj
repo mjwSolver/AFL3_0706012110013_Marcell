@@ -43,6 +43,7 @@
 		04BCC18929F7F8B300904D07 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC18829F7F8B300904D07 /* PageViewController.swift */; };
 		04BCC18B29F7FF7400904D07 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC18A29F7FF7400904D07 /* FeatureCard.swift */; };
 		04BCC18D29F800A800904D07 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC18C29F800A800904D07 /* PageView.swift */; };
+		04BCC18F29F80A2600904D07 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC18E29F80A2600904D07 /* PageControl.swift */; };
 		04D7CF5D29F2B146001C629A /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */; };
 		04D7CF5F29F2B91C001C629A /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5E29F2B91C001C629A /* RotatedBadgeSymbol.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		04BCC18829F7F8B300904D07 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		04BCC18A29F7FF7400904D07 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		04BCC18C29F800A800904D07 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		04BCC18E29F80A2600904D07 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		04D7CF5E29F2B91C001C629A /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -296,6 +298,7 @@
 			children = (
 				04BCC18829F7F8B300904D07 /* PageViewController.swift */,
 				04BCC18C29F800A800904D07 /* PageView.swift */,
+				04BCC18E29F80A2600904D07 /* PageControl.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				042B219029E8EA7A007BBC41 /* MapView.swift in Sources */,
 				04AB808B29F2C54E0003260B /* GraphCapsule.swift in Sources */,
 				048B7E4429E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift in Sources */,
+				04BCC18F29F80A2600904D07 /* PageControl.swift in Sources */,
 				042B21A329E90004007BBC41 /* FavoriteButton.swift in Sources */,
 				04AB809429F2DAD60003260B /* CategoryItem.swift in Sources */,
 				04AB808D29F2C54E0003260B /* HikeDetail.swift in Sources */,
