@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileEditor: View {
     @Binding var profile: Profile
     
+    // Using a closed range to limit the date options
     var dateRange: ClosedRange<Date> {
             let min = Calendar.current.date(byAdding: .year, value: -1, to: profile.goalDate)!
             let max = Calendar.current.date(byAdding: .year, value: 1, to: profile.goalDate)!
@@ -41,6 +42,7 @@ struct ProfileEditor: View {
                 .pickerStyle(.segmented)
             }
             
+            // Adding a datepicker
             DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
                 Text("Goal Date").bold()
             }
