@@ -176,6 +176,7 @@
 		04BCC1D429F81DF400904D07 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		04BCC1D629F820C400904D07 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		04BCC1D829F8213D00904D07 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		04BCC1DA29F8243F00904D07 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		04D7CF5E29F2B91C001C629A /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -410,6 +411,7 @@
 				04BCC1D829F8213D00904D07 /* NotificationController.swift */,
 				04BCC1A029F8172400904D07 /* Assets.xcassets */,
 				04BCC1A229F8172400904D07 /* Preview Content */,
+				04BCC1DA29F8243F00904D07 /* PushNotificationPayload.apns */,
 			);
 			path = "WatchLandmarks Watch App";
 			sourceTree = "<group>";
