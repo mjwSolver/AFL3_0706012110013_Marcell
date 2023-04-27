@@ -89,6 +89,8 @@
 		04BCC21C29FAABE300904D07 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC21A29FAAB5300904D07 /* LandmarkList.swift */; };
 		04BCC21E29FAAFF600904D07 /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC21D29FAAFF600904D07 /* LandmarkCommands.swift */; };
 		04BCC21F29FAAFF600904D07 /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC21D29FAAFF600904D07 /* LandmarkCommands.swift */; };
+		04BCC22329FAB56600904D07 /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC22229FAB4CE00904D07 /* LandmarkSettings.swift */; };
+		04BCC22429FAB63600904D07 /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCC22229FAB4CE00904D07 /* LandmarkSettings.swift */; };
 		04D7CF5D29F2B146001C629A /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5C29F2B146001C629A /* BadgeSymbol.swift */; };
 		04D7CF5F29F2B91C001C629A /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D7CF5E29F2B91C001C629A /* RotatedBadgeSymbol.swift */; };
 /* End PBXBuildFile section */
@@ -925,6 +927,7 @@
 				04BCC17B29F7BE5F00904D07 /* ProfileHost.swift in Sources */,
 				04AB808529F2C4300003260B /* Hike.swift in Sources */,
 				04D7CF5F29F2B91C001C629A /* RotatedBadgeSymbol.swift in Sources */,
+				04BCC22329FAB56600904D07 /* LandmarkSettings.swift in Sources */,
 				04BCC18D29F800A800904D07 /* PageView.swift in Sources */,
 				04D7CF5D29F2B146001C629A /* BadgeSymbol.swift in Sources */,
 				04BCC18229F7D5D200904D07 /* ProfileEditor.swift in Sources */,
@@ -1002,6 +1005,7 @@
 			files = (
 				04BCC21229FA24D500904D07 /* Landmark.swift in Sources */,
 				04BCC1E429FA234F00904D07 /* ContentView.swift in Sources */,
+				04BCC22429FAB63600904D07 /* LandmarkSettings.swift in Sources */,
 				04BCC20F29FA24D500904D07 /* Profile.swift in Sources */,
 				04BCC21329FA24D500904D07 /* LandmarkList.swift in Sources */,
 				04BCC21F29FAAFF600904D07 /* LandmarkCommands.swift in Sources */,
