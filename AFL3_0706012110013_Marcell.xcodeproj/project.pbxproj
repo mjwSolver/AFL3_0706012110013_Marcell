@@ -323,7 +323,6 @@
 				042B219529E8EF3E007BBC41 /* Landmark.swift */,
 				04AB808429F2C4300003260B /* Hike.swift */,
 				04BCC17629F7BE1600904D07 /* Profile.swift */,
-				042B219A29E8F475007BBC41 /* Resources */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				042B219B29E8F4D2007BBC41 /* Models */,
+				042B219A29E8F475007BBC41 /* Resources */,
 				042B219929E8F40D007BBC41 /* Views */,
 				048B7E4729E4F09E00E75BB5 /* Assets.xcassets */,
 				048B7E4329E4F09C00E75BB5 /* AFL3_0706012110013_MarcellApp.swift */,
