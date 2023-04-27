@@ -21,9 +21,11 @@ struct LandmarkRow: View {
             VStack(alignment: .leading) {
                 Text(landmark.name)
                     .bold()
-                Text(landmark.park)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+            #if !os(watchOS)
+            Text(landmark.park)
+                .font(.caption)
+                .foregroundColor(.secondary)
+            #endif
             }
 
 
