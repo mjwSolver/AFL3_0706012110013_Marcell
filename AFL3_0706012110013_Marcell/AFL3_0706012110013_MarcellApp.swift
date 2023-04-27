@@ -27,5 +27,11 @@ struct AFL3_0706012110013_MarcellApp: App {
     WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
     #endif
         
+    #if os(macOS)
+    Settings {
+        LandmarkSettings()
+    }
+    #endif
+        
     }
 }
