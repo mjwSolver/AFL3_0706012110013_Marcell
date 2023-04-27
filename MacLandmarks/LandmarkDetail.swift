@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 
+// This one is designed for the Mac Screen. One that is bigger and thus we have more to work with.
 struct LandmarkDetail: View {
     @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
@@ -16,6 +17,7 @@ struct LandmarkDetail: View {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
 
+    // Adding Map View with an "Open in Maps" option
     var body: some View {
         ScrollView {
             ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {
