@@ -13,6 +13,7 @@ struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     @State private var filter = FilterCategory.all
+    @State private var selectedLandmark: Landmark?
     
     // Creating a filter category
     enum FilterCategory: String, CaseIterable, Identifiable {
@@ -39,9 +40,14 @@ struct LandmarkList: View {
         return showFavoritesOnly ? "Favorite \(title)" : title
     }
     
+    // Calculated Property of index of selected row
+    var index: Int? {
+        modelData.landmarks.firstIndex(where: { $0.id == selectedLandmark?.id })
+    }
+    
     var body: some View {
         NavigationView {
-            List {
+            List(selection: $selectedLandmark) {
                 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
@@ -49,6 +55,7 @@ struct LandmarkList: View {
                     } label: {
                         LandmarkRow(landmark: landmark)
                     }
+                    .tag(landmark)
                 }
             }
         }
@@ -78,6 +85,8 @@ struct LandmarkList: View {
             
             Text("Select a Landmark")
         }
+        // Ensures that we're editing the real deal info
+        .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
     }
 }
 
