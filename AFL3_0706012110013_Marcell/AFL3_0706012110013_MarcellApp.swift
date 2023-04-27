@@ -16,6 +16,12 @@ struct AFL3_0706012110013_MarcellApp: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        // watchOS doesn't have this, so it won't work. Need to wrap it.
+        #if !os(watchOS)
+        .commands {
+            LandmarkCommands()
+        }
+        #endif
         
     #if os(watchOS)
     WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
