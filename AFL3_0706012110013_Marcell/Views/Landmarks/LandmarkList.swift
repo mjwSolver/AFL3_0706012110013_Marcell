@@ -22,9 +22,6 @@ struct LandmarkList: View {
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites only")
-                }
                 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
@@ -37,6 +34,18 @@ struct LandmarkList: View {
         }
         .navigationTitle("Landmarks")
         .frame(minWidth: 300)
+        // Add a toolbar, inside it is a toggle for favorite.
+        .toolbar {
+            ToolbarItem {
+                Menu {
+                    Toggle(isOn: $showFavoritesOnly) {
+                        Label("Favorites only", systemImage: "star.fill")
+                    }
+                } label: {
+                    Label("Filter", systemImage: "slider.horizontal.3")
+                }
+            }
+        }
     }
 }
 
