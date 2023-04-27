@@ -21,19 +21,19 @@ struct LandmarkList: View {
         case lakes = "Lakes"
         case rivers = "Rivers"
         case mountains = "Mountains"
-
+        
         var id: FilterCategory { self }
     }
-
+    
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
             // Additional filtering logic
-                && (filter == .all || filter.rawValue == landmark.category.rawValue)
+            && (filter == .all || filter.rawValue == landmark.category.rawValue)
         }
     }
-
+    
     // Title changes if we're viewing favorites
     var title: String {
         let title = filter == .all ? "Landmarks" : filter.rawValue
@@ -67,13 +67,11 @@ struct LandmarkList: View {
                 Menu {
                     // Adding a picker for selecting the category
                     Picker("Category", selection: $filter) {
-                            ForEach(FilterCategory.allCases) { category in
-                                Text(category.rawValue).tag(category)
-                            }
+                        ForEach(FilterCategory.allCases) { category in
+                            Text(category.rawValue).tag(category)
                         }
-                        .pickerStyle(.inline)
-
-
+                    }
+                    .pickerStyle(.inline)
                     
                     Toggle(isOn: $showFavoritesOnly) {
                         Label("Favorites only", systemImage: "star.fill")
@@ -89,6 +87,7 @@ struct LandmarkList: View {
         .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
     }
 }
+
 
 // Previews our current LandmarkList Code.
 // Previewing as iPhone SE
