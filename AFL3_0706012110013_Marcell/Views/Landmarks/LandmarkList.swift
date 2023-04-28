@@ -1,4 +1,3 @@
-//
 //  LandmarkList.swift
 //  AFL3_0706012110013_Marcell
 //
@@ -58,30 +57,30 @@ struct LandmarkList: View {
                     .tag(landmark)
                 }
             }
-        }
-        .navigationTitle(title)
-        .frame(minWidth: 300)
-        // Add a toolbar, inside it is a toggle for favorite.
-        .toolbar {
-            ToolbarItem {
-                Menu {
-                    // Adding a picker for selecting the category
-                    Picker("Category", selection: $filter) {
-                        ForEach(FilterCategory.allCases) { category in
-                            Text(category.rawValue).tag(category)
+            .navigationTitle(title)
+            .frame(minWidth: 300)
+            // Add a toolbar, inside it is a toggle for favorite.
+            .toolbar {
+                ToolbarItem {
+                    Menu {
+                        // Adding a picker for selecting the category
+                        Picker("Category", selection: $filter) {
+                            ForEach(FilterCategory.allCases) { category in
+                                Text(category.rawValue).tag(category)
+                            }
                         }
+                        .pickerStyle(.inline)
+                        
+                        Toggle(isOn: $showFavoritesOnly) {
+                            Label("Favorites only", systemImage: "star.fill")
+                        }
+                    } label: {
+                        Label("Filter", systemImage: "slider.horizontal.3")
                     }
-                    .pickerStyle(.inline)
-                    
-                    Toggle(isOn: $showFavoritesOnly) {
-                        Label("Favorites only", systemImage: "star.fill")
-                    }
-                } label: {
-                    Label("Filter", systemImage: "slider.horizontal.3")
                 }
             }
-            
             Text("Select a Landmark")
+            
         }
         // Ensures that we're editing the real deal info
         .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
@@ -89,11 +88,12 @@ struct LandmarkList: View {
 }
 
 
+
 // Previews our current LandmarkList Code.
 // Previewing as iPhone SE
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-       LandmarkList()
+        LandmarkList()
             .environmentObject(ModelData())
     }
 }
